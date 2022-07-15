@@ -1,4 +1,10 @@
+const log4js = require('log4js');
 const Router = require('koa-router');
+var logger = log4js.getLogger();
+
+
+var logger = log4js.getLogger('books');
+logger.info('book-api is in.');
 
 // Prefix all routes with: /books
 const router = new Router({
@@ -14,6 +20,7 @@ let books = [
 
 router.get('/', (ctx, next) =>
 {
+    logger.info('success');
     ctx.body = {
         status: 200,
         'message': 'Books retrieved successfully',
