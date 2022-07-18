@@ -12,10 +12,10 @@ const router = new Router({
 });
 
 let books = [
-    { id: 101, name: 'Fight Club', author: 'Chuck Palahniuk' },
-    { id: 102, name: 'Sharp Objects', author: 'Gillian Flynn' },
-    { id: 103, name: 'Frankenstein', author: 'Mary Shelley' },
-    { id: 101, name: 'Into The Wild', author: 'John Krakauer' }
+    { id: 101, count: 1, name: 'Fight Club', author: 'Chuck Palahniuk' },
+    { id: 102, count: 1, name: 'Sharp Objects', author: 'Gillian Flynn' },
+    { id: 103, count: 1, name: 'Frankenstein', author: 'Mary Shelley' },
+    { id: 104, count: 1, name: 'Into The Wild', author: 'John Krakauer' }
 ];
 
 router.get('/', (ctx, next) =>
