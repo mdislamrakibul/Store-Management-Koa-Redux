@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "jest --watchAll --coverage"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,8 @@
     "koa-router": "^11.0.1",
     "log4js": "^6.6.0",
     "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }
